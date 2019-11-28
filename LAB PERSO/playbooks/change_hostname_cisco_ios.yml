@@ -7,4 +7,4 @@
     - name: changer le hostname des routeurs
       ios_config:
             lines:
-	       - hostname "{{ new_hostname }}"
+              - hostname "{{ new_hostname }}"
