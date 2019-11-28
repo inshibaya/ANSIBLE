@@ -6,5 +6,5 @@
   tasks:
     - name: changer le hostname des routeurs
       ios_config:
-	lines:
-	   - hostname "{{ new_hostname }}"
+            lines:
+	       - hostname "{{ new_hostname }}"
