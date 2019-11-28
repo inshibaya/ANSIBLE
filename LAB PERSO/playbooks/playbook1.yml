@@ -1,0 +1,13 @@
+---
+- name: "sauvegarder la configuration"
+  hosts:  "{{ target }}"
+  
+  tasks:
+    - name: "tache1: get config"
+      ios_command:
+        commands: "show running-config"
+      register: cli_result
+
+    - name: "tache2: print output"
+      debug:
+        msg: "{{ cli_result }}"
