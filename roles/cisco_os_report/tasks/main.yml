@@ -79,7 +79,7 @@
     host: smtp.gmail.com
     secure: starttls
     charset: utf-8
-    port: 465
+    port: 587
     username: inshibaya@gmail.com
     password: "{{ gmail_account_password }}"
     to: inshibaya@gmail.com  
