@@ -80,10 +80,10 @@
     port: 465
     username: "{{ gmail_account }}"
     password: "{{ gmail_account_password }}"
-    to: inshibaya@gmail.com
+    to: inshibaya <inshibaya@gmail.com>
     subject: "Ansible Report"
     body: "The consolidated report for the Cisco IOS Routers can be found in the attached file"
     attach:
-     - reports/Consolidated_Cisco_IOS_Report.html
+     - reports/Consolidated_Cisco_IOS_Report.htmlf
   delegate_to: localhost
   run_once: yes
