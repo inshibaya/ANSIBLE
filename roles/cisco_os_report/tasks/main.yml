@@ -80,7 +80,7 @@
     port: 465
     username: "{{ gmail_account }}"
     password: "{{ gmail_account_password }}"
-    to: inshibaya <inshibaya@gmail.com>
+    to: inshibaya@gmail.com
     subject: "Ansible Report"
     body: "The consolidated report for the Cisco IOS Routers can be found in the attached file"
     attach:
