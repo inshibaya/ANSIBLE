@@ -1,0 +1,10 @@
+---
+- name: "playbook changement hostname"
+  hosts:  "{{ target }}"
+  gather_facts:  false
+  
+  tasks:
+    - name: changer le hostname des routeurs
+      ios_config:
+            lines:
+              - hostname "{{ new_hostname }}"
