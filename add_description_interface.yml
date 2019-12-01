@@ -1,0 +1,25 @@
+---
+
+- name : playbook
+  hosts: "{{ target }}"
+  
+  tasks: 
+    - name: "configurer une description "
+      ios_command:
+        commands:
+           - show running-configuration
+
+   - name: "print output" 
+     debug:
+       msg: "{{ cli_result }}"
+       
+   - name: "task3"
+     file:
+       path:  "outputs"
+       state: directory
+     run_once
+     
+   - name: "ecrire le fichier" 
+     copy:
+        content: "{{ cli_result.stdout[0]}}\n"
+        dest: "outputs/{{ inventory_hostname ]].txt"
