@@ -22,4 +22,4 @@
     - name: ecrire le fichier
       copy:
         content: "{{ cli_result.stdout[0]}}\n"
-        dest: "outputs/{{ inventory_hostname ]].txt"
+        dest: "outputs/{{ inventory_hostname }}.txt"
