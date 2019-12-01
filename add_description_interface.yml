@@ -6,7 +6,7 @@
     - name: configurer une description
       ios_command:
         commands:
-           - show running-configuration
+           - show running-config
       register: cli_result
 
     - name: print output 
