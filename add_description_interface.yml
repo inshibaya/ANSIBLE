@@ -1,6 +1,5 @@
 ---
-
-- name : playbook
+- name : "playbook"
   hosts: "{{ target }}"
   
   tasks: 
