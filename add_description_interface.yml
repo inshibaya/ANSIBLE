@@ -17,7 +17,7 @@
       file:
         path:  "outputs"
         state: directory
-     run_once
+      run_once
      
     - name: ecrire le fichier
       copy:
